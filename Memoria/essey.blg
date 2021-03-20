@@ -1,0 +1,76 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: essey.aux
+The style file: fullname_esp.bst
+Database file #1: bibliography.bib
+Repeated entry---line 1163 of file bibliography.bib
+ : @article{Jain2019
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1191 of file bibliography.bib
+ : @article{Aubakirova2016
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1391 of file bibliography.bib
+ : @article{Rajani2019
+ :                    ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for ""
+Warning--empty revista in Bahdanau2014
+Warning--empty revista in Brown2020
+Warning--empty revista in Clark2020
+Warning--empty revista in Pablo-Sanchez
+Warning--empty revista in Devlin2018
+Warning--empty revista in Lewis2019
+Warning--empty revista in Moldovan2001
+`year' is a missing field, not a string, for entry Openai
+while executing---line 2821 of file fullname_esp.bst
+Warning--empty a\~no in Openai
+Warning--empty instituci\'on in Openai
+Warning--empty instituci\'on in Radford2019
+Warning--empty revista in Raffel2019
+Warning--empty revista in Vaswani2017
+Warning--empty revista in Voorhees1999
+Warning--empty revista in Yan2020
+You've used 55 entries,
+            2625 wiz_defined-function locations,
+            917 strings with 17241 characters,
+and the built_in function-call counts, 27641 in all, are:
+= -- 2861
+> -- 1670
+< -- 23
++ -- 511
+- -- 504
+* -- 2046
+:= -- 4333
+add.period$ -- 232
+call.type$ -- 55
+change.case$ -- 474
+chr.to.int$ -- 55
+cite$ -- 69
+duplicate$ -- 1060
+empty$ -- 1745
+format.name$ -- 590
+if$ -- 5957
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 48
+newline$ -- 326
+num.names$ -- 165
+pop$ -- 562
+preamble$ -- 1
+purify$ -- 472
+quote$ -- 0
+skip$ -- 897
+stack$ -- 0
+substring$ -- 1150
+swap$ -- 317
+text.length$ -- 23
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 440
+warning$ -- 14
+while$ -- 182
+width$ -- 59
+write$ -- 799
+(There were 4 error messages)

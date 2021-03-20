@@ -1,0 +1,751 @@
+@article{Bengio2001,
+  	title={A neural probabilistic language model},
+  	author={Bengio, Yoshua and Ducharme, R{\'e}jean and Vincent, Pascal and Jauvin, Christian},
+  	journal={Journal of machine learning research},
+	volume={3},
+	number={Feb},
+	pages={1137--1155},
+ 	year={2001}
+}
+@inproceedings{Knesser1995,
+  	title={Improved backing-off for m-gram language modeling},
+  	author={Kneser, Reinhard and Ney, Hermann},
+  	booktitle={1995 International Conference on Acoustics, Speech, and Signal Processing},
+  	volume={1},
+  	pages={181--184},
+  	year={1995},
+  	organization={IEEE}
+}
+@article{Bahdanau2014,
+	abstract = {Neural machine translation is a recently proposed approach to machine translation. Unlike the traditional statistical machine translation, the neural machine translation aims at building a single neural network that can be jointly tuned to maximize the translation performance. The models proposed recently for neural machine translation often belong to a family of encoder-decoders and consists of an encoder that encodes a source sentence into a fixed-length vector from which a decoder generates a translation. In this paper, we conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder-decoder architecture, and propose to extend this by allowing a model to automatically (soft-)search for parts of a source sentence that are relevant to predicting a target word, without having to form these parts as a hard segment explicitly. With this new approach, we achieve a translation performance comparable to the existing state-of-the-art phrase-based system on the task of English-to-French translation. Furthermore, qualitative analysis reveals that the (soft-)alignments found by the model agree well with our intuition.},
+	archivePrefix = {arXiv},
+	arxivId = {1409.0473},
+	author = {Bahdanau, Dzmitry and Cho, Kyunghyun and Bengio, Yoshua},
+	eprint = {1409.0473},
+	file = {::},
+	month = {sep},
+	title = {{Neural Machine Translation by Jointly Learning to Align and Translate}},
+	url = {http://arxiv.org/abs/1409.0473},
+	year = {2014}
+}
+@article{Vaswani2017,
+	abstract = {The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.},
+	archivePrefix = {arXiv},
+	arxivId = {1706.03762},
+	author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, Lukasz and Polosukhin, Illia},
+	eprint = {1706.03762},
+	file = {::},
+	month = {jun},
+	title = {Attention Is All You Need},
+	url = {http://arxiv.org/abs/1706.03762},
+	year = {2017}
+}
+@article{Devlin2018,
+	abstract = {We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5% (7.7% point absolute improvement), MultiNLI accuracy to 86.7% (4.6% absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).},
+	archivePrefix = {arXiv},
+	arxivId = {1810.04805},
+	author = {Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina},
+	eprint = {1810.04805},
+	file = {::},
+	month = {oct},
+	title = {BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding},
+	url = {http://arxiv.org/abs/1810.04805},
+	year = {2018}
+}
+
+
+@article{Wu2016,
+  	author = {Yonghui Wu and
+               Mike Schuster and
+               Zhifeng Chen and
+               Quoc V. Le and
+               Mohammad Norouzi and
+               Wolfgang Macherey and
+               Maxim Krikun and
+               Yuan Cao and
+               Qin Gao and
+               Klaus Macherey and
+               Jeff Klingner and
+               Apurva Shah and
+               Melvin Johnson and
+               Xiaobing Liu and
+               Lukasz Kaiser and
+               Stephan Gouws and
+               Yoshikiyo Kato and
+               Taku Kudo and
+               Hideto Kazawa and
+               Keith Stevens and
+               George Kurian and
+               Nishant Patil and
+               Wei Wang and
+               Cliff Young and
+               Jason Smith and
+               Jason Riesa and
+               Alex Rudnick and
+               Oriol Vinyals and
+               Greg Corrado and
+               Macduff Hughes and
+               Jeffrey Dean},
+	title     = {Google's Neural Machine Translation System: Bridging the Gap between
+               Human and Machine Translation},
+  	journal   = {CoRR},
+  	volume    = {abs/1609.08144},
+  	year      = {2016},
+  	url       = {http://arxiv.org/abs/1609.08144},
+  	archivePrefix = {arXiv},
+  	eprint    = {1609.08144},
+  	timestamp = {Thu, 14 Mar 2019 09:34:18 +0100},
+  	biburl    = {https://dblp.org/rec/journals/corr/WuSCLNMKCGMKSJL16.bib},
+  	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@article{Taylor1953,
+  	title={Cloze Procedure: A New Tool for Measuring Readability.},
+  	author={Taylor, Wilson L},
+  	journal={Journalism and Mass Communication Quarterly},
+  	volume={30},
+  	number={4},
+  	pages={415},
+  	year={1953},
+  	publisher={Association for Education in Journalism, etc.}
+}
+@inproceedings{Mikolov2013,
+	title={Distributed representations of words and phrases and their compositionality},
+	author={Mikolov, Tomas and Sutskever, Ilya and Chen, Kai and Corrado, Greg S and Dean, Jeff},
+	booktitle={Advances in neural information processing systems},
+	pages={3111--3119},
+	year={2013}
+}
+@article{Raffel2019,
+	abstract = {Transfer learning, where a model is first pre-trained on a data-rich task before being fine-tuned on a downstream task, has emerged as a powerful technique in natural language processing (NLP). The effectiveness of transfer learning has given rise to a diversity of approaches, methodology, and practice. In this paper, we explore the landscape of transfer learning techniques for NLP by introducing a unified framework that converts every language problem into a text-to-text format. Our systematic study compares pre-training objectives, architectures, unlabeled datasets, transfer approaches, and other factors on dozens of language understanding tasks. By combining the insights from our exploration with scale and our new "Colossal Clean Crawled Corpus", we achieve state-of-the-art results on many benchmarks covering summarization, question answering, text classification, and more. To facilitate future work on transfer learning for NLP, we release our dataset, pre-trained models, and code.},
+	archivePrefix = {arXiv},
+	arxivId = {1910.10683},
+	author = {Raffel, Colin and Shazeer, Noam and Roberts, Adam and Lee, Katherine and Narang, Sharan and Matena, Michael and Zhou, Yanqi and Li, Wei and Liu, Peter J.},
+	eprint = {1910.10683},
+	file = {::},
+	month = {oct},
+	title = {{Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer}},
+	url = {http://arxiv.org/abs/1910.10683},
+	year = {2019}
+}
+@techreport{Openai,
+	abstract = {Natural language understanding comprises a wide range of diverse tasks such as textual entailment, question answering, semantic similarity assessment, and document classification. Although large unlabeled text corpora are abundant, labeled data for learning these specific tasks is scarce, making it challenging for discriminatively trained models to perform adequately. We demonstrate that large gains on these tasks can be realized by generative pre-training of a language model on a diverse corpus of unlabeled text, followed by discriminative fine-tuning on each specific task. In contrast to previous approaches, we make use of task-aware input transformations during fine-tuning to achieve effective transfer while requiring minimal changes to the model architecture. We demonstrate the effectiveness of our approach on a wide range of benchmarks for natural language understanding. Our general task-agnostic model outperforms discriminatively trained models that use architectures specifically crafted for each task, significantly improving upon the state of the art in 9 out of the 12 tasks studied. For instance, we achieve absolute improvements of 8.9% on commonsense reasoning (Stories Cloze Test), 5.7% on question answering (RACE), and 1.5% on textual entailment (MultiNLI).},
+	author = {Openai, Alec Radford and Openai, Karthik Narasimhan and Openai, Tim Salimans and Openai, Ilya Sutskever},
+	file = {::},
+	title = {{Improving Language Understanding by Generative Pre-Training}},
+	url = {https://gluebenchmark.com/leaderboard}
+}
+@techreport{Radford2019,
+	abstract = {Natural language processing tasks, such as question answering, machine translation, reading comprehension , and summarization, are typically approached with supervised learning on task-specific datasets. We demonstrate that language models begin to learn these tasks without any explicit supervision when trained on a new dataset of millions of webpages called WebText. When conditioned on a document plus questions, the answers generated by the language model reach 55 F1 on the CoQA dataset-matching or exceeding the performance of 3 out of 4 baseline systems without using the 127,000+ training examples. The capacity of the language model is essential to the success of zero-shot task transfer and increasing it improves performance in a log-linear fashion across tasks. Our largest model, GPT-2, is a 1.5B parameter Transformer that achieves state of the art results on 7 out of 8 tested language modeling datasets in a zero-shot setting but still underfits WebText. Samples from the model reflect these improvements and contain coherent paragraphs of text. These findings suggest a promising path towards building language processing systems which learn to perform tasks from their naturally occurring demonstrations.},
+	author = {Radford, Alec and Wu, Jeffrey and Child, Rewon and Luan, David and Amodei, Dario and Sutskever, Ilya},
+	file = {::},
+	title = {{Language Models are Unsupervised Multitask Learners}},
+	url = {https://github.com/codelucas/newspaper},
+	year = {2019}
+}
+@article{Brown2020,
+	abstract = {Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by fine-tuning on a specific task. While typically task-agnostic in architecture, this method still requires task-specific fine-tuning datasets of thousands or tens of thousands of examples. By contrast, humans can generally perform a new language task from only a few examples or from simple instructions - something which current NLP systems still largely struggle to do. Here we show that scaling up language models greatly improves task-agnostic, few-shot performance, sometimes even reaching competitiveness with prior state-of-the-art fine-tuning approaches. Specifically, we train GPT-3, an autoregressive language model with 175 billion parameters, 10x more than any previous non-sparse language model, and test its performance in the few-shot setting. For all tasks, GPT-3 is applied without any gradient updates or fine-tuning, with tasks and few-shot demonstrations specified purely via text interaction with the model. GPT-3 achieves strong performance on many NLP datasets, including translation, question-answering, and cloze tasks, as well as several tasks that require on-the-fly reasoning or domain adaptation, such as unscrambling words, using a novel word in a sentence, or performing 3-digit arithmetic. At the same time, we also identify some datasets where GPT-3's few-shot learning still struggles, as well as some datasets where GPT-3 faces methodological issues related to training on large web corpora. Finally, we find that GPT-3 can generate samples of news articles which human evaluators have difficulty distinguishing from articles written by humans. We discuss broader societal impacts of this finding and of GPT-3 in general.},
+	archivePrefix = {arXiv},
+	arxivId = {2005.14165},
+	author = {Brown, Tom B. and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and Agarwal, Sandhini and Herbert-Voss, Ariel and Krueger, Gretchen and Henighan, Tom and Child, Rewon and Ramesh, Aditya and Ziegler, Daniel M. and Wu, Jeffrey and Winter, Clemens and Hesse, Christopher and Chen, Mark and Sigler, Eric and Litwin, Mateusz and Gray, Scott and Chess, Benjamin and Clark, Jack and Berner, Christopher and McCandlish, Sam and Radford, Alec and Sutskever, Ilya and Amodei, Dario},
+	eprint = {2005.14165},
+	file = {::},
+	month = {may},
+	title = {{Language Models are Few-Shot Learners}},
+	url = {http://arxiv.org/abs/2005.14165},
+	year = {2020}
+}
+@article{Lewis2019,
+	abstract = {We present BART, a denoising autoencoder for pretraining sequence-to-sequence models. BART is trained by (1) corrupting text with an arbitrary noising function, and (2) learning a model to reconstruct the original text. It uses a standard Tranformer-based neural machine translation architecture which, despite its simplicity, can be seen as generalizing BERT (due to the bidirectional encoder), GPT (with the left-to-right decoder), and many other more recent pretraining schemes. We evaluate a number of noising approaches, finding the best performance by both randomly shuffling the order of the original sentences and using a novel in-filling scheme, where spans of text are replaced with a single mask token. BART is particularly effective when fine tuned for text generation but also works well for comprehension tasks. It matches the performance of RoBERTa with comparable training resources on GLUE and SQuAD, achieves new state-of-the-art results on a range of abstractive dialogue, question answering, and summarization tasks, with gains of up to 6 ROUGE. BART also provides a 1.1 BLEU increase over a back-translation system for machine translation, with only target language pretraining. We also report ablation experiments that replicate other pretraining schemes within the BART framework, to better measure which factors most influence end-task performance.},
+	archivePrefix = {arXiv},
+	arxivId = {1910.13461},
+	author = {Lewis, Mike and Liu, Yinhan and Goyal, Naman and Ghazvininejad, Marjan and Mohamed, Abdelrahman and Levy, Omer and Stoyanov, Ves and Zettlemoyer, Luke},
+	eprint = {1910.13461},
+	file = {::},
+	title = {{BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension}},
+	url = {http://arxiv.org/abs/1910.13461},
+	year = {2019}
+}
+@article{Yan2020,
+	abstract = {In this paper, we present a new sequence-to-sequence pre-training model called ProphetNet, which introduces a novel self-supervised objective named future n-gram prediction and the proposed n-stream self-attention mechanism. Instead of the optimization of one-step ahead prediction in traditional sequence-to-sequence model, the ProphetNet is optimized by n-step ahead prediction which predicts the next n tokens simultaneously based on previous context tokens at each time step. The future n-gram prediction explicitly encourages the model to plan for the future tokens and prevent overfitting on strong local correlations. We pre-train ProphetNet using a base scale dataset (16GB) and a large scale dataset (160GB) respectively. Then we conduct experiments on CNN/DailyMail, Gigaword, and SQuAD 1.1 benchmarks for abstractive summarization and question generation tasks. Experimental results show that ProphetNet achieves new state-of-the-art results on all these datasets compared to the models using the same scale pre-training corpus.},
+	archivePrefix = {arXiv},
+	arxivId = {2001.04063},
+	author = {Yan, Yu and Qi, Weizhen and Gong, Yeyun and Liu, Dayiheng and Duan, Nan and Chen, Jiusheng and Zhang, Ruofei and Zhou, Ming},
+	eprint = {2001.04063},
+	file = {::},
+	month = {jan},
+	title = {{ProphetNet: Predicting Future N-gram for Sequence-to-Sequence Pre-training}},
+	url = {http://arxiv.org/abs/2001.04063},
+	year = {2020}
+}
+@misc{Rosset2020,
+	abstract = {Turing-NLG: A 17-billion-parameter language model by Microsoft},
+	title = {Turing-NLG: A 17-billion-parameter language model by Microsoft},
+	author = {C. Rosset},
+	year = {2020},
+	url = {https://www.microsoft.com/en-us/research/blog/turing-nlg-a-17-billion-parameter-language-model-by-microsoft/}
+}
+@article{Clark2020,
+	abstract = {Masked language modeling (MLM) pre-training methods such as BERT corrupt the input by replacing some tokens with [MASK] and then train a model to reconstruct the original tokens. While they produce good results when transferred to downstream NLP tasks, they generally require large amounts of compute to be effective. As an alternative, we propose a more sample-efficient pre-training task called replaced token detection. Instead of masking the input, our approach corrupts it by replacing some tokens with plausible alternatives sampled from a small generator network. Then, instead of training a model that predicts the original identities of the corrupted tokens, we train a discriminative model that predicts whether each token in the corrupted input was replaced by a generator sample or not. Thorough experiments demonstrate this new pre-training task is more efficient than MLM because the task is defined over all input tokens rather than just the small subset that was masked out. As a result, the contextual representations learned by our approach substantially outperform the ones learned by BERT given the same model size, data, and compute. The gains are particularly strong for small models; for example, we train a model on one GPU for 4 days that outperforms GPT (trained using 30x more compute) on the GLUE natural language understanding benchmark. Our approach also works well at scale, where it performs comparably to RoBERTa and XLNet while using less than 1/4 of their compute and outperforms them when using the same amount of compute.},
+	archivePrefix = {arXiv},
+	arxivId = {2003.10555},
+	author = {Clark, Kevin and Luong, Minh-Thang and Le, Quoc V. and Manning, Christopher D.},
+	eprint = {2003.10555},
+	file = {::},
+	month = {mar},
+	title = {{ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators}},
+	url = {http://arxiv.org/abs/2003.10555},
+	year = {2020}
+}
+
+
+
+
+
+
+@article{Gonzalez2003,
+	author = {González, José},
+	year = {2003},
+	month = {01},
+	title = {La Búsqueda de Respuestas: Estado Actual y Perspectivas de Futuro},
+	volume = {8},
+	journal = {Inteligencia artificial: Revista Iberoamericana de Inteligencia Artificial, ISSN 1137-3601, null 8, No. 22, 2004, pags. 37-56},
+	doi = {10.4114/ia.v8i22.805}
+}
+
+@article{Ahmed2016a,
+	author = {Ahmed, Waheeb and Anto, Babu},
+	year = {2016},
+	month = {12},
+	pages = {2703-2706},
+	title = {Answer Extraction and Passage Retrieval for Question Answering Systems},
+	volume = {5},
+	journal = {International Journal of Advanced Research in Computer Engineering and Technology}
+}
+
+@article{Pablo-Sanchez,
+	author = {de Pablo-Sánchez, César},
+	year = {2020},
+	month = {04},
+	title = {Bootstrapping named entity resources for adaptive question answering systems}
+}
+
+@inproceedings{Radev2005,
+	author = {Radev, Dragomir and Fan, Weiguo and Qi, Hong and Wu, Harris and Grewal, Amardeep},
+	title = {Probabilistic Question Answering on the Web},
+	year = {2002},
+	isbn = {1581134495},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/511446.511500},
+	doi = {10.1145/511446.511500},
+	booktitle = {Proceedings of the 11th International Conference on World Wide Web},
+	pages = {408419},
+	numpages = {12},
+	keywords = {search engines, answer extraction, answer selection, natural language processing, question answering, information retrieval, query modulation},
+	location = {Honolulu, Hawaii, USA},
+	series = {WWW 02}
+}
+
+@article{Moldovan2001,
+	author = {Moldovan, Dan and Harabagiu, A and Paca, Marius and Mihalcea, Rada and Goodrum, Richard and Girju, Roxana and Rus, Vasile},
+	year = {2001},
+	month = {11},
+	title = {LASSO: A Tool for Surfing the Answer Net}
+}
+
+@inproceedings{Li2002,
+	author = {Li, Xin and Roth, Dan},
+	title = {Learning Question Classifiers},
+	year = {2002},
+	publisher = {Association for Computational Linguistics},
+	address = {USA},
+	url = {https://doi.org/10.3115/1072228.1072378},
+	doi = {10.3115/1072228.1072378},
+	booktitle = {Proceedings of the 19th International Conference on Computational Linguistics - Volume 1},
+	pages = {1-7},
+	numpages = {7},
+	location = {Taipei, Taiwan},
+	series = {COLING 02}
+}
+
+@misc{Yamada2020,
+	title={LUKE: Deep Contextualized Entity Representations with Entity-aware Self-attention}, 
+	author={Ikuya Yamada and Akari Asai and Hiroyuki Shindo and Hideaki Takeda and Yuji Matsumoto},
+	year={2020},
+	eprint={2010.01057},
+	archivePrefix={arXiv},
+	primaryClass={cs.CL}
+}
+
+@article{Rajpurkar2016,
+	author    = {Pranav Rajpurkar and
+		       Jian Zhang and
+		       Konstantin Lopyrev and
+		       Percy Liang},
+	title     = {SQuAD: 100, 000+ Questions for Machine Comprehension of Text},
+	journal   = {CoRR},
+	volume    = {abs/1606.05250},
+	year      = {2016},
+	url       = {http://arxiv.org/abs/1606.05250},
+	archivePrefix = {arXiv},
+	eprint    = {1606.05250},
+	timestamp = {Mon, 13 Aug 2018 16:49:13 +0200},
+	biburl    = {https://dblp.org/rec/journals/corr/RajpurkarZLL16.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{Rajpurkar2018,
+	author    = {Pranav Rajpurkar and
+		       Robin Jia and
+		       Percy Liang},
+	title     = {Know What You Don't Know: Unanswerable Questions for SQuAD},
+	journal   = {CoRR},
+	volume    = {abs/1806.03822},
+	year      = {2018},
+	url       = {http://arxiv.org/abs/1806.03822},
+	archivePrefix = {arXiv},
+	eprint    = {1806.03822},
+	timestamp = {Mon, 13 Aug 2018 16:48:21 +0200},
+	biburl    = {https://dblp.org/rec/journals/corr/abs-1806-03822.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{Lai2017,
+    title = "{RACE}: Large-scale {R}e{A}ding Comprehension Dataset From Examinations",
+    author = "Lai, Guokun  and
+      Xie, Qizhe  and
+      Liu, Hanxiao  and
+      Yang, Yiming  and
+      Hovy, Eduard",
+    booktitle = "Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing",
+    month = sep,
+    year = "2017",
+    address = "Copenhagen, Denmark",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/D17-1082",
+    doi = "10.18653/v1/D17-1082",
+    pages = "785--794",
+    abstract = "We present RACE, a new dataset for benchmark evaluation of methods in the reading comprehension task. Collected from the English exams for middle and high school Chinese students in the age range between 12 to 18, RACE consists of near 28,000 passages and near 100,000 questions generated by human experts (English instructors), and covers a variety of topics which are carefully designed for evaluating the students{'} ability in understanding and reasoning. In particular, the proportion of questions that requires reasoning is much larger in RACE than that in other benchmark datasets for reading comprehension, and there is a significant gap between the performance of the state-of-the-art models (43{\%}) and the ceiling human performance (95{\%}). We hope this new dataset can serve as a valuable resource for research and evaluation in machine comprehension. The dataset is freely available at \url{http://www.cs.cmu.edu/~glai1/data/race/}and the code is available at \url{https://github.com/qizhex/RACE_AR_baselines}.",
+}
+
+@article{Shoeybi2019,
+	author    = {Mohammad Shoeybi and
+		       Mostofa Patwary and
+		       Raul Puri and
+		       Patrick LeGresley and
+		       Jared Casper and
+		       Bryan Catanzaro},
+	title     = {Megatron-LM: Training Multi-Billion Parameter Language Models Using
+		       Model Parallelism},
+	journal   = {CoRR},
+	volume    = {abs/1909.08053},
+	year      = {2019},
+	url       = {http://arxiv.org/abs/1909.08053},
+	archivePrefix = {arXiv},
+	eprint    = {1909.08053},
+	timestamp = {Tue, 24 Sep 2019 11:33:51 +0200},
+	biburl    = {https://dblp.org/rec/journals/corr/abs-1909-08053.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{Rogers2020, 
+	title={Getting Closer to AI Complete Question Answering: A Set of Prerequisite Real Tasks}, 
+	volume={34}, 
+	url={https://ojs.aaai.org/index.php/AAAI/article/view/6398}, 
+	DOI={10.1609/aaai.v34i05.6398}, 
+	abstractNote={&lt;p&gt;The recent explosion in question answering research produced a wealth of both factoid reading comprehension (RC) and commonsense reasoning datasets. Combining them presents a different kind of task: deciding not simply whether information is present in the text, but also whether a confident guess could be made for the missing information. We present QuAIL, the first RC dataset to combine text-based, world knowledge and unanswerable questions, and to provide question type annotation that would enable diagnostics of the reasoning strategies by a given QA system. QuAIL contains 15K multi-choice questions for 800 texts in 4 domains. Crucially, it offers both general and text-specific questions, unlikely to be found in pretraining data. We show that QuAIL poses substantial challenges to the current state-of-the-art systems, with a 30% drop in accuracy compared to the most similar existing dataset.&lt;/p&gt;}, 
+	number={05}, 
+	journal={Proceedings of the AAAI Conference on Artificial Intelligence}, 
+	author={Rogers, Anna and Kovaleva, Olga and Downey, Matthew and Rumshisky, Anna}, 
+	year={2020}, 
+	month={Apr.}, 
+	pages={8722-8731} 
+}
+
+@article{Voorhees1999,
+	author = {Voorhees, Ellen},
+	year = {2000},
+	month = {11},
+	pages = {},
+	title = {The TREC-8 question answering track report}
+}
+
+@article{Allam2012,
+	author = {Allam, Ali and Haggag, Mohamed},
+	year = {2012},
+	month = {09},
+	pages = {211-221},
+	title = {The Question Answering Systems: A Survey},
+	volume = {2},
+	journal = {International Journal of Research and Reviews in Information Sciences}
+}
+
+
+
+
+
+
+@misc{Danilevsky2020,
+      title={A Survey of the State of Explainable AI for Natural Language Processing}, 
+      author={Marina Danilevsky and Kun Qian and Ranit Aharonov and Yannis Katsis and Ban Kawas and Prithviraj Sen},
+      year={2020},
+      eprint={2010.00711},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{Carton2018,
+      title={Extractive Adversarial Networks: High-Recall Explanations for Identifying Personal Attacks in Social Media Posts}, 
+      author={Samuel Carton and Qiaozhu Mei and Paul Resnick},
+      year={2018},
+      eprint={1809.01499},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{Ling2017,
+      title={Program Induction by Rationale Generation : Learning to Solve and Explain Algebraic Word Problems}, 
+      author={Wang Ling and Dani Yogatama and Chris Dyer and Phil Blunsom},
+      year={2017},
+      eprint={1705.04146},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}
+
+@inproceedings{Rajani2019,
+    title = "Explain Yourself! Leveraging Language Models for Commonsense Reasoning",
+    author = "Rajani, Nazneen Fatema  and
+      McCann, Bryan  and
+      Xiong, Caiming  and
+      Socher, Richard",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/P19-1487",
+    doi = "10.18653/v1/P19-1487",
+    pages = "4932--4942",
+    abstract = "Deep learning models perform poorly on tasks that require commonsense reasoning, which often necessitates some form of world-knowledge or reasoning over information not immediately present in the input. We collect human explanations for commonsense reasoning in the form of natural language sequences and highlighted annotations in a new dataset called Common Sense Explanations (CoS-E). We use CoS-E to train language models to automatically generate explanations that can be used during training and inference in a novel Commonsense Auto-Generated Explanation (CAGE) framework. CAGE improves the state-of-the-art by 10{\%} on the challenging CommonsenseQA task. We further study commonsense reasoning in DNNs using both human and auto-generated explanations including transfer to out-of-domain tasks. Empirical results indicate that we can effectively leverage language models for commonsense reasoning.",
+}
+
+@inproceedings{Lertvittayakumjorn2019,
+    title = "Human-grounded Evaluations of Explanation Methods for Text Classification",
+    author = "Lertvittayakumjorn, Piyawat  and
+      Toni, Francesca",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/D19-1523",
+    doi = "10.18653/v1/D19-1523",
+    pages = "5195--5205",
+    abstract = "Due to the black-box nature of deep learning models, methods for explaining the models{'} results are crucial to gain trust from humans and support collaboration between AIs and humans. In this paper, we consider several model-agnostic and model-specific explanation methods for CNNs for text classification and conduct three human-grounded evaluations, focusing on different purposes of explanations: (1) revealing model behavior, (2) justifying model predictions, and (3) helping humans investigate uncertain predictions. The results highlight dissimilar qualities of the various explanation methods we consider and show the degree to which these methods could serve for each purpose.",
+}
+
+@inproceedings{Sydorova2019,
+    title = "Interpretable Question Answering on Knowledge Bases and Text",
+    author = "Sydorova, Alona  and
+      Poerner, Nina  and
+      Roth, Benjamin",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/P19-1488",
+    doi = "10.18653/v1/P19-1488",
+    pages = "4943--4951",
+    abstract = "Interpretability of machine learning (ML) models becomes more relevant with their increasing adoption. In this work, we address the interpretability of ML based question answering (QA) models on a combination of knowledge bases (KB) and text documents. We adapt post hoc explanation methods such as LIME and input perturbation (IP) and compare them with the self-explanatory attention mechanism of the model. For this purpose, we propose an automatic evaluation paradigm for explanation methods in the context of QA. We also conduct a study with human annotators to evaluate whether explanations help them identify better QA models. Our results suggest that IP provides better explanations than LIME or attention, according to both automatic and human evaluation. We obtain the same ranking of methods in both experiments, which supports the validity of our automatic evaluation paradigm.",
+}
+
+@inproceedings{Serrano2019,
+    title = "Is Attention Interpretable?",
+    author = "Serrano, Sofia  and
+      Smith, Noah A.",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/P19-1282",
+    doi = "10.18653/v1/P19-1282",
+    pages = "2931--2951",
+    abstract = "Attention mechanisms have recently boosted performance on a range of NLP tasks. Because attention layers explicitly weight input components{'} representations, it is also often assumed that attention can be used to identify information that models found important (e.g., specific contextualized word tokens). We test whether that assumption holds by manipulating attention weights in already-trained text classification models and analyzing the resulting differences in their predictions. While we observe some ways in which higher attention weights correlate with greater impact on model predictions, we also find many ways in which this does not hold, i.e., where gradient-based rankings of attention weights better predict their effects than their magnitudes. We conclude that while attention noisily predicts input components{'} overall importance to a model, it is by no means a fail-safe indicator.",
+}
+
+@inproceedings{Luo2018,
+  title     = {Beyond Polarity: Interpretable Financial Sentiment Analysis with Hierarchical Query-driven Attention},
+  author    = {Ling Luo and Xiang Ao and Feiyang Pan and Jin Wang and Tong Zhao and Ningzi Yu and Qing He},
+  booktitle = {Proceedings of the Twenty-Seventh International Joint Conference on
+               Artificial Intelligence, {IJCAI-18}},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},             
+  pages     = {4244--4250},
+  year      = {2018},
+  month     = {7},
+  doi       = {10.24963/ijcai.2018/590},
+  url       = {https://doi.org/10.24963/ijcai.2018/590},
+}
+
+@inproceedings{Ghaeini2018,
+    title = "Interpreting Recurrent and Attention-Based Neural Models: a Case Study on Natural Language Inference",
+    author = "Ghaeini, Reza  and
+      Fern, Xiaoli  and
+      Tadepalli, Prasad",
+    booktitle = "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",
+    month = oct # "-" # nov,
+    year = "2018",
+    address = "Brussels, Belgium",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/D18-1537",
+    doi = "10.18653/v1/D18-1537",
+    pages = "4952--4957",
+    abstract = "Deep learning models have achieved remarkable success in natural language inference (NLI) tasks. While these models are widely explored, they are hard to interpret and it is often unclear how and why they actually work. In this paper, we take a step toward explaining such deep learning based models through a case study on a popular neural model for NLI. In particular, we propose to interpret the intermediate layers of NLI models by visualizing the saliency of attention and LSTM gating signals. We present several examples for which our methods are able to reveal interesting insights and identify the critical information contributing to the model decisions.",
+}
+
+@inproceedings{Jain2019,
+    title = "{A}ttention is not {E}xplanation",
+    author = "Jain, Sarthak  and
+      Wallace, Byron C.",
+    booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+    month = jun,
+    year = "2019",
+    address = "Minneapolis, Minnesota",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/N19-1357",
+    doi = "10.18653/v1/N19-1357",
+    pages = "3543--3556",
+    abstract = "Attention mechanisms have seen wide adoption in neural NLP models. In addition to improving predictive performance, these are often touted as affording transparency: models equipped with attention provide a distribution over attended-to input units, and this is often presented (at least implicitly) as communicating the relative importance of inputs. However, it is unclear what relationship exists between attention weights and model outputs. In this work we perform extensive experiments across a variety of NLP tasks that aim to assess the degree to which attention weights provide meaningful {``}explanations{''} for predictions. We find that they largely do not. For example, learned attention weights are frequently uncorrelated with gradient-based measures of feature importance, and one can identify very different attention distributions that nonetheless yield equivalent predictions. Our findings show that standard attention modules do not provide meaningful explanations and should not be treated as though they do.",
+}
+
+@inproceedings{Xie2017,
+    title = "An Interpretable Knowledge Transfer Model for Knowledge Base Completion",
+    author = "Xie, Qizhe  and
+      Ma, Xuezhe  and
+      Dai, Zihang  and
+      Hovy, Eduard",
+    booktitle = "Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/P17-1088",
+    doi = "10.18653/v1/P17-1088",
+    pages = "950--962",
+    abstract = "Knowledge bases are important resources for a variety of natural language processing tasks but suffer from incompleteness. We propose a novel embedding model, ITransF, to perform knowledge base completion. Equipped with a sparse attention mechanism, ITransF discovers hidden concepts of relations and transfer statistical strength through the sharing of concepts. Moreover, the learned associations between relations and concepts, which are represented by sparse attention vectors, can be interpreted easily. We evaluate ITransF on two benchmark datasets{---}WN18 and FB15k for knowledge base completion and obtains improvements on both the mean rank and Hits@10 metrics, over all baselines that do not use additional information.",
+}
+
+@inproceedings{Voskarides2015,
+    title = "Learning to Explain Entity Relationships in Knowledge Graphs",
+    author = "Voskarides, Nikos  and
+      Meij, Edgar  and
+      Tsagkias, Manos  and
+      de Rijke, Maarten  and
+      Weerkamp, Wouter",
+    booktitle = "Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and the 7th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    month = jul,
+    year = "2015",
+    address = "Beijing, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/P15-1055",
+    doi = "10.3115/v1/P15-1055",
+    pages = "564--574",
+}
+
+@article{Palmonari2020,
+  title={Knowledge graph embeddings and explainable AI},
+  author={PALMONARI, Matteo and MINERVINI, Pasquale},
+  journal={Knowledge Graphs for Explainable Artificial Intelligence: Foundations, Applications and Challenges},
+  volume={47},
+  pages={49},
+  year={2020},
+  publisher={IOS Press}
+}
+@article{Lecue2020,
+  title={On the role of knowledge graphs in explainable AI},
+  author={Lecue, Freddy},
+  journal={Semantic Web},
+  volume={11},
+  number={1},
+  pages={41--51},
+  year={2020},
+  publisher={IOS Press}
+}
+@article{Aubakirova2016,
+  title={Interpreting Neural Networks to Improve Politeness Comprehension},
+  author={Malika Aubakirova and Mohit Bansal},
+  journal={ArXiv},
+  year={2016},
+  volume={abs/1610.02683}
+}
+@article{Jain2019,
+  author    = {Sarthak Jain and
+               Byron C. Wallace},
+  title     = {Attention is not Explanation},
+  journal   = {CoRR},
+  volume    = {abs/1902.10186},
+  year      = {2019},
+  url       = {http://arxiv.org/abs/1902.10186},
+  archivePrefix = {arXiv},
+  eprint    = {1902.10186},
+  timestamp = {Tue, 21 May 2019 18:03:40 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1902-10186.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@article{Aubakirova2016,
+  title={Interpreting Neural Networks to Improve Politeness Comprehension},
+  author={Malika Aubakirova and Mohit Bansal},
+  journal={ArXiv},
+  year={2016},
+  volume={abs/1610.02683}
+}
+@inproceedings{Moon2019,
+  title={Opendialkg: Explainable conversational reasoning with attention-based walks over knowledge graphs},
+  author={Moon, Seungwhan and Shah, Pararth and Kumar, Anuj and Subba, Rajen},
+  booktitle={Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics},
+  pages={845--854},
+  year={2019}
+}
+@inproceedings{Pappas2014,
+    title = "Explaining the Stars: Weighted Multiple-Instance Learning for Aspect-Based Sentiment Analysis",
+    author = "Pappas, Nikolaos  and
+      Popescu-Belis, Andrei",
+    booktitle = "Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing ({EMNLP})",
+    month = oct,
+    year = "2014",
+    address = "Doha, Qatar",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/D14-1052",
+    doi = "10.3115/v1/D14-1052",
+    pages = "455--466",
+}
+@inproceedings{Gupta2018,
+    title = "{LISA}: Explaining Recurrent Neural Network Judgments via Layer-w{I}se Semantic Accumulation and Example to Pattern Transformation",
+    author = {Gupta, Pankaj  and
+      Sch{\"u}tze, Hinrich},
+    booktitle = "Proceedings of the 2018 {EMNLP} Workshop {B}lackbox{NLP}: Analyzing and Interpreting Neural Networks for {NLP}",
+    month = nov,
+    year = "2018",
+    address = "Brussels, Belgium",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/W18-5418",
+    doi = "10.18653/v1/W18-5418",
+    pages = "154--164",
+    abstract = "Recurrent neural networks (RNNs) are temporal networks and cumulative in nature that have shown promising results in various natural language processing tasks. Despite their success, it still remains a challenge to understand their hidden behavior. In this work, we analyze and interpret the cumulative nature of RNN via a proposed technique named as \textit{Layer-wIse-Semantic-Accumulation} (LISA) for explaining decisions and detecting the most likely (i.e., saliency) patterns that the network relies on while decision making. We demonstrate (1) \textit{LISA}: {``}How an RNN accumulates or builds semantics during its sequential processing for a given text example and expected response{''} (2) \textit{Example2pattern}: {``}How the saliency patterns look like for each category in the data according to the network in decision making{''}. We analyse the sensitiveness of RNNs about different inputs to check the increase or decrease in prediction scores and further extract the saliency patterns learned by the network. We employ two relation classification datasets: SemEval 10 Task 8 and TAC KBP Slot Filling to explain RNN predictions via the \textit{LISA} and \textit{example2pattern}.",
+}
+@inproceedings{Poerner2018,
+    title = "Evaluating neural network explanation methods using hybrid documents and morphosyntactic agreement",
+    author = {Poerner, Nina  and
+      Sch{\"u}tze, Hinrich  and
+      Roth, Benjamin},
+    booktitle = "Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2018",
+    address = "Melbourne, Australia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/P18-1032",
+    doi = "10.18653/v1/P18-1032",
+    pages = "340--350",
+    abstract = "The behavior of deep neural networks (DNNs) is hard to understand. This makes it necessary to explore post hoc explanation methods. We conduct the first comprehensive evaluation of explanation methods for NLP. To this end, we design two novel evaluation paradigms that cover two important classes of NLP problems: small context and large context problems. Both paradigms require no manual annotation and are therefore broadly applicable. We also introduce LIMSSE, an explanation method inspired by LIME that is designed for NLP. We show empirically that LIMSSE, LRP and DeepLIFT are the most effective explanation methods and recommend them for explaining DNNs in NLP.",
+}
+@inproceedings{Wallace2018,
+    title = "Interpreting Neural Networks with Nearest Neighbors",
+    author = "Wallace, Eric  and
+      Feng, Shi  and
+      Boyd-Graber, Jordan",
+    booktitle = "Proceedings of the 2018 {EMNLP} Workshop {B}lackbox{NLP}: Analyzing and Interpreting Neural Networks for {NLP}",
+    month = nov,
+    year = "2018",
+    address = "Brussels, Belgium",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/W18-5416",
+    doi = "10.18653/v1/W18-5416",
+    pages = "136--144",
+    abstract = "Local model interpretation methods explain individual predictions by assigning an importance value to each input feature. This value is often determined by measuring the change in confidence when a feature is removed. However, the confidence of neural networks is not a robust measure of model uncertainty. This issue makes reliably judging the importance of the input features difficult. We address this by changing the test-time behavior of neural networks using Deep k-Nearest Neighbors. Without harming text classification accuracy, this algorithm provides a more robust uncertainty metric which we use to generate feature importance values. The resulting interpretations better align with human perception than baseline methods. Finally, we use our interpretation method to analyze model predictions on dataset annotation artifacts.",
+}
+@article{Papernot2018,
+  author    = {Nicolas Papernot and
+               Patrick D. McDaniel},
+  title     = {Deep k-Nearest Neighbors: Towards Confident, Interpretable and Robust
+               Deep Learning},
+  journal   = {CoRR},
+  volume    = {abs/1803.04765},
+  year      = {2018},
+  url       = {http://arxiv.org/abs/1803.04765},
+  archivePrefix = {arXiv},
+  eprint    = {1803.04765},
+  timestamp = {Mon, 13 Aug 2018 16:48:06 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1803-04765.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@inproceedings{Alvarez2017,
+    title = "A causal framework for explaining the predictions of black-box sequence-to-sequence models",
+    author = "Alvarez-Melis, David  and
+      Jaakkola, Tommi",
+    booktitle = "Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing",
+    month = sep,
+    year = "2017",
+    address = "Copenhagen, Denmark",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/D17-1042",
+    doi = "10.18653/v1/D17-1042",
+    pages = "412--421",
+    abstract = "We interpret the predictions of any black-box structured input-structured output model around a specific input-output pair. Our method returns an {``}explanation{''} consisting of groups of input-output tokens that are causally related. These dependencies are inferred by querying the model with perturbed inputs, generating a graph over tokens from the responses, and solving a partitioning problem to select the most relevant components. We focus the general approach on sequence-to-sequence problems, adopting a variational autoencoder to yield meaningful input perturbations. We test our method across several NLP sequence generation tasks.",
+}
+@article{Rajani2019,
+  author    = {Nazneen Fatema Rajani and
+               Bryan McCann and
+               Caiming Xiong and
+               Richard Socher},
+  title     = {Explain Yourself! Leveraging Language Models for Commonsense Reasoning},
+  journal   = {CoRR},
+  volume    = {abs/1906.02361},
+  year      = {2019},
+  url       = {http://arxiv.org/abs/1906.02361},
+  archivePrefix = {arXiv},
+  eprint    = {1906.02361},
+  timestamp = {Thu, 13 Jun 2019 13:36:00 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1906-02361.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@article{Lei2016,
+  author    = {Tao Lei and
+               Regina Barzilay and
+               Tommi S. Jaakkola},
+  title     = {Rationalizing Neural Predictions},
+  journal   = {CoRR},
+  volume    = {abs/1606.04155},
+  year      = {2016},
+  url       = {http://arxiv.org/abs/1606.04155},
+  archivePrefix = {arXiv},
+  eprint    = {1606.04155},
+  timestamp = {Fri, 19 Jul 2019 09:36:46 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/LeiBJ16.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@inproceedings{Vig2019,
+    title = "A Multiscale Visualization of Attention in the Transformer Model",
+    author = "Vig, Jesse",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics: System Demonstrations",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/P19-3007",
+    doi = "10.18653/v1/P19-3007",
+    pages = "37--42",
+}
+
+@inproceedings{Ribeiro2016,
+  author = {Marco Tulio Ribeiro and Sameer Singh and Carlos Guestrin},
+  title = {Why Should I Trust You?: Explaining the Predictions of Any Classifier},
+  booktitle = {Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, San Francisco, CA, USA, August 13-17, 2016},
+  pages = {1135--1144},
+  year = {2016},
+}
+

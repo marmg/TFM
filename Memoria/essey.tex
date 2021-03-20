@@ -1,0 +1,312 @@
+\documentclass[a4paper,11pt,twoside,openright]{book}
+
+\usepackage{latexsym}
+\usepackage[latin1]{inputenc}
+\usepackage[activeacute,spanish]{babel}
+\frenchspacing
+\usepackage{eucal}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage[margin=1in,left=1.5in,includefoot]{geometry}
+\usepackage{fancyhdr}
+\usepackage{titling}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{pgfplots}
+\usepackage{amsmath}
+\usepackage{fullname_esp}
+\usepackage[colorlinks=true, linkcolor=blue]{hyperref}
+\usepackage{pdfpages}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{setspace}
+\usepackage{mdframed}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% SCRIPT DE TODO'S O TAREAS PENDIENTES CON BOCADILLOS.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\makeatletter \newcommand \listoftodos{\section*{Todo list} \@starttoc{tdo}}
+\newcommand\l@todo[2]
+    {\par\noindent \textit{#2}, \parbox{10cm}{#1}\par} \makeatother
+
+\definecolor{orange}{rgb}{1,0.5,0}
+\tikzstyle{notestyle} += [text width=\marginparwidth]
+\tikzstyle{notestyleleft} += [text width=0.9\marginparwidth]
+\tikzstyle{notestyle} = [draw=black, fill=orange, text width = 3cm]
+\tikzstyle{notestyleleft} = [notestyle]
+\tikzstyle{connectstyle} = [draw = orange, thick]
+% Command for inserting a todo item
+\newcommand{\todo}[1]{%
+% Add to todo list
+\addcontentsline{tdo}{todo}{\protect{#1}}%
+%
+\begin{tikzpicture}[remember picture, baseline=-0.75ex]%
+    \node [coordinate] (inText) {};
+\end{tikzpicture}%
+%
+% Make the margin par
+\marginpar[%
+{% Draw note in left margin
+    \tikz[remember picture] \draw node[notestyleleft] (inNote) {#1};%
+    \begin{tikzpicture}[remember picture, overlay]%
+        \draw[connectstyle]
+            ([yshift=-0.2cm] inText)
+                -| ([xshift=0.2cm] inNote.east)
+                -| (inNote.east);
+    \end{tikzpicture}%
+}%
+]{% Draw note in right margin
+    \tikz[remember picture] \draw node[notestyle] (inNote) {#1};%
+    \begin{tikzpicture}[remember picture, overlay]%
+        \draw[connectstyle]
+            ([yshift=-0.2cm] inText)
+                -| ([xshift=-0.2cm] inNote.west)
+                -| (inNote.west);
+    \end{tikzpicture}%
+}%
+}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% MDFramed Config
+\newcounter{passage}[chapter]\setcounter{passage}{0}
+\renewcommand{\thepassage}{\arabic{chapter}.\arabic{passage}}
+\newenvironment{passage}[2][]{
+	\refstepcounter{passage}
+	\ifstrempty{#1}
+	{
+		\mdfsetup {
+			frametitle={
+				\tikz[baseline=(current bounding box.east),outer sep=0pt]
+				\node[anchor=east,rectangle,fill=blue!20] {
+					\strut Passage~\thepassage
+				};
+			}
+		}
+	}
+	{
+		\mdfsetup {
+			frametitle={
+				\tikz[baseline=(current bounding box.east),outer sep=0pt]
+				\node[anchor=east,rectangle,fill=blue!20] {
+					\strut Passage~\thepassage:~#1
+				};
+			}
+		}
+	}
+	\mdfsetup{
+		innertopmargin=10pt,linecolor=blue!20,
+		linewidth=2pt,topline=true,
+		frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+	}
+	\begin{mdframed}[]\relax%
+	\label{#2}}{\end{mdframed}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\floatname{algorithm}{Algorithm}
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{\textsc{Chapter} \thechapter. #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[LO]{\rightmark}
+\fancyhead[RE]{\leftmark}
+
+%% Dejar espacio para la regla
+\renewcommand{\headrulewidth}{0.02cm} %Son 0.5pt
+
+% Redefinición de 'plain' para la primera página del capítulo
+\fancypagestyle{plain}{
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+}
+
+% Limpiar las cabeceras de las páginas que quedan completamente blancas
+\makeatletter
+  \def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+  \vspace*{\fill}
+    \thispagestyle{empty}
+    \newpage
+    \if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
+
+\setlength\headheight{20pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% COMIENZA EL DOCUMENTO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagenumbering{roman}
+\makeindex
+\begin{document}
+
+\newlength{\centeroffset}
+\setlength{\centeroffset}{-0.5\oddsidemargin}
+\addtolength{\centeroffset}{0.5\evensidemargin}
+\thispagestyle{empty}
+\vspace*{\stretch{1}}
+\setstretch{1.2}
+
+\noindent
+\hspace*{\centeroffset}
+
+\renewcommand\contentsname{Table of Contents}
+\renewcommand\listfigurename{List of Figures}
+\renewcommand\listtablename{List of Tables}
+\renewcommand\bibname{References}
+\renewcommand\figurename{Figure}
+\renewcommand\tablename{Table} 
+\renewcommand\chaptername{Chapter}
+\renewcommand\appendixname{Appendix}
+\renewcommand\abstractname{Abstract}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% PORTADA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\thispagestyle{empty}
+\vspace*{1cm}
+\hrule
+\mbox{ }
+
+\begin{center}
+\begin{LARGE}
+Final Master Project: Explainability of Language Models applied to Question Answering\\ [0.3em]
+\end{LARGE}
+\end{center}
+
+\hrule
+\vspace*{1cm}
+\begin{center}
+ \includegraphics[width=0.3\textwidth]{images/Logo_UNED.jpg} %[width=4cm,,keepaspectratio]
+\end{center}
+
+\vfill
+\begin{center}
+  {\Large {\bf Final Master Project}}
+\end{center}
+
+\vfill
+\begin{center}
+  \textbf{Marcos Martínez Galindo} \\ [0.2em]
+  Research project for the \\ \vspace{10pt}
+  Master in Language Technologies\\ \vspace{10pt}
+  National Distance Education University \\ \vspace{10pt}
+  \vspace{2cm}
+  Directed by \\ \vspace{10pt}
+  \textbf{Prof. Dr. D. Álvaro Rodrigo Yuste} \\ [0.5em]
+  June 2021\\
+\end{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% AGRADECIMIENTOS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\chapter*{Agradecimientos}
+%\label{sec:Agradecimientos}
+
+%\noindent Agradecimientos si procede.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% RESUMEN
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\chapter*{Resumen}
+%\label{sec:Resumen}
+%\noindent Breve resumen del trabajo realizado y de los objetivos conseguidos.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ABSTRACT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{Abstract}
+\label{sec:Abstract}
+\noindent Breve resumen del trabajo realizado y de los objetivos conseguidos en inglés.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% INDICES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+\listoffigures
+\listoftables
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ENTRADAS A LOS FICHEROS CON LOS CAPITULOS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{chapters/Introduction}
+\input{chapters/StateOfTheArt}
+\input{chapters/Methodology}
+\input{chapters/Results}
+\input{chapters/ConclusionsAndFutureWork}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% BIBLIOGRAFÍA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{fullname_esp}
+\cleardoublepage
+\addcontentsline{toc}{chapter}{References}
+\chapter*{References}
+\fancyhead[RE]{References}
+\fancyhead[LO]{References}
+
+\nocite{*}
+\bibliography{bibliography}
+
+\newpage
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% APENDICES SI PROCEDE (COMENTAR)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+\fancyhead[RE]{\textsc{APPENDIX} \thechapter. GPT-3 Examples}
+\fancyhead[LO]{\textsc{APPENDIX} \thechapter. GPT-3 Examples}
+\input{chapters/GPT3-Examples}
+
+% Publicaciones derivadas del trabajo realizado.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% lISTA DE TAREAS PENDIENTES.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\newpage
+%Eliminar si no hay todo's
+\listoftodos
+
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% SCRIPT FINAL DE TODO'S O TAREAS PENDIENTES.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Make the margin par
+\marginpar{%
+    \begin{tikzpicture}[remember picture]%
+        \draw node[notestyle] (inNote)
+                 {#1};%
+    \end{tikzpicture}%
+}%
+%
+\begin{tikzpicture}[remember picture, overlay]%
+    \draw[connectstyle]
+        ([yshift=-0.2cm] inText)
+            -| ([xshift=-0.2cm] inNote.west)
+            -| (inNote.west);
+\end{tikzpicture}%
+
+}% 

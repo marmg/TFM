@@ -1,0 +1,429 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citename{Ahmed y Anto}2016]{Ahmed2016a}
+Ahmed, Waheeb y Babu Anto.
+\newblock 2016.
+\newblock Answer extraction and passage retrieval for question answering
+  systems.
+\newblock {\em International Journal of Advanced Research in Computer
+  Engineering and Technology}, 5:2703--2706, 12.
+
+\bibitem[\protect\citename{Allam y Haggag}2012]{Allam2012}
+Allam, Ali y Mohamed Haggag.
+\newblock 2012.
+\newblock The question answering systems: A survey.
+\newblock {\em International Journal of Research and Reviews in Information
+  Sciences}, 2:211--221, 09.
+
+\bibitem[\protect\citename{Alvarez-Melis y Jaakkola}2017]{Alvarez2017}
+Alvarez-Melis, David y Tommi Jaakkola.
+\newblock 2017.
+\newblock A causal framework for explaining the predictions of black-box
+  sequence-to-sequence models.
+\newblock En {\em Proceedings of the 2017 Conference on Empirical Methods in
+  Natural Language Processing}, p\'aginas 412--421, Copenhagen, Denmark,
+  Septiembre. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Aubakirova y Bansal}2016]{Aubakirova2016}
+Aubakirova, Malika y Mohit Bansal.
+\newblock 2016.
+\newblock Interpreting neural networks to improve politeness comprehension.
+\newblock {\em ArXiv}, abs/1610.02683.
+
+\bibitem[\protect\citename{Bahdanau, Cho, y Bengio}2014]{Bahdanau2014}
+Bahdanau, Dzmitry, Kyunghyun Cho, y Yoshua Bengio.
+\newblock 2014.
+\newblock {Neural Machine Translation by Jointly Learning to Align and
+  Translate}.
+\newblock sep.
+
+\bibitem[\protect\citename{Bengio \bgroup et al.\egroup }2001]{Bengio2001}
+Bengio, Yoshua, R{\'e}jean Ducharme, Pascal Vincent, y Christian Jauvin.
+\newblock 2001.
+\newblock A neural probabilistic language model.
+\newblock {\em Journal of machine learning research}, 3(Feb):1137--1155.
+
+\bibitem[\protect\citename{Brown \bgroup et al.\egroup }2020]{Brown2020}
+Brown, Tom~B., Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan,
+  Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda
+  Askell, Sandhini Agarwal, Ariel Herbert-Voss, Gretchen Krueger, Tom Henighan,
+  Rewon Child, Aditya Ramesh, Daniel~M. Ziegler, Jeffrey Wu, Clemens Winter,
+  Christopher Hesse, Mark Chen, Eric Sigler, Mateusz Litwin, Scott Gray,
+  Benjamin Chess, Jack Clark, Christopher Berner, Sam McCandlish, Alec Radford,
+  Ilya Sutskever, y Dario Amodei.
+\newblock 2020.
+\newblock {Language Models are Few-Shot Learners}.
+\newblock may.
+
+\bibitem[\protect\citename{Carton, Mei, y Resnick}2018]{Carton2018}
+Carton, Samuel, Qiaozhu Mei, y Paul Resnick.
+\newblock 2018.
+\newblock Extractive adversarial networks: High-recall explanations for
+  identifying personal attacks in social media posts.
+
+\bibitem[\protect\citename{Clark \bgroup et al.\egroup }2020]{Clark2020}
+Clark, Kevin, Minh-Thang Luong, Quoc~V. Le, y Christopher~D. Manning.
+\newblock 2020.
+\newblock {ELECTRA: Pre-training Text Encoders as Discriminators Rather Than
+  Generators}.
+\newblock mar.
+
+\bibitem[\protect\citename{Danilevsky \bgroup et al.\egroup
+  }2020]{Danilevsky2020}
+Danilevsky, Marina, Kun Qian, Ranit Aharonov, Yannis Katsis, Ban Kawas, y
+  Prithviraj Sen.
+\newblock 2020.
+\newblock A survey of the state of explainable ai for natural language
+  processing.
+
+\bibitem[\protect\citename{de Pablo-Sánchez}2020]{Pablo-Sanchez}
+de~Pablo-Sánchez, César.
+\newblock 2020.
+\newblock Bootstrapping named entity resources for adaptive question answering
+  systems.
+\newblock 04.
+
+\bibitem[\protect\citename{Devlin \bgroup et al.\egroup }2018]{Devlin2018}
+Devlin, Jacob, Ming-Wei Chang, Kenton Lee, y Kristina Toutanova.
+\newblock 2018.
+\newblock Bert: Pre-training of deep bidirectional transformers for language
+  understanding.
+\newblock oct.
+
+\bibitem[\protect\citename{Ghaeini, Fern, y Tadepalli}2018]{Ghaeini2018}
+Ghaeini, Reza, Xiaoli Fern, y Prasad Tadepalli.
+\newblock 2018.
+\newblock Interpreting recurrent and attention-based neural models: a case
+  study on natural language inference.
+\newblock En {\em Proceedings of the 2018 Conference on Empirical Methods in
+  Natural Language Processing}, p\'aginas 4952--4957, Brussels, Belgium,
+  Octubre-Noviembre. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{González}2003]{Gonzalez2003}
+González, José.
+\newblock 2003.
+\newblock La búsqueda de respuestas: Estado actual y perspectivas de futuro.
+\newblock {\em Inteligencia artificial: Revista Iberoamericana de Inteligencia
+  Artificial, ISSN 1137-3601, null 8, No. 22, 2004, pags. 37-56}, 8, 01.
+
+\bibitem[\protect\citename{Gupta y Sch{\"u}tze}2018]{Gupta2018}
+Gupta, Pankaj y Hinrich Sch{\"u}tze.
+\newblock 2018.
+\newblock {LISA}: Explaining recurrent neural network judgments via
+  layer-w{I}se semantic accumulation and example to pattern transformation.
+\newblock En {\em Proceedings of the 2018 {EMNLP} Workshop {B}lackbox{NLP}:
+  Analyzing and Interpreting Neural Networks for {NLP}}, p\'aginas 154--164,
+  Brussels, Belgium, Noviembre. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Jain y Wallace}2019]{Jain2019}
+Jain, Sarthak y Byron~C. Wallace.
+\newblock 2019.
+\newblock {A}ttention is not {E}xplanation.
+\newblock En {\em Proceedings of the 2019 Conference of the North {A}merican
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies, Volume 1 (Long and Short Papers)}, p\'aginas 3543--3556,
+  Minneapolis, Minnesota, Junio. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Kneser y Ney}1995]{Knesser1995}
+Kneser, Reinhard y Hermann Ney.
+\newblock 1995.
+\newblock Improved backing-off for m-gram language modeling.
+\newblock En {\em 1995 International Conference on Acoustics, Speech, and
+  Signal Processing}, volumen~1, p\'aginas 181--184. IEEE.
+
+\bibitem[\protect\citename{Lai \bgroup et al.\egroup }2017]{Lai2017}
+Lai, Guokun, Qizhe Xie, Hanxiao Liu, Yiming Yang, y Eduard Hovy.
+\newblock 2017.
+\newblock {RACE}: Large-scale {R}e{A}ding comprehension dataset from
+  examinations.
+\newblock En {\em Proceedings of the 2017 Conference on Empirical Methods in
+  Natural Language Processing}, p\'aginas 785--794, Copenhagen, Denmark,
+  Septiembre. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Lecue}2020]{Lecue2020}
+Lecue, Freddy.
+\newblock 2020.
+\newblock On the role of knowledge graphs in explainable ai.
+\newblock {\em Semantic Web}, 11(1):41--51.
+
+\bibitem[\protect\citename{Lei, Barzilay, y Jaakkola}2016]{Lei2016}
+Lei, Tao, Regina Barzilay, y Tommi~S. Jaakkola.
+\newblock 2016.
+\newblock Rationalizing neural predictions.
+\newblock {\em CoRR}, abs/1606.04155.
+
+\bibitem[\protect\citename{Lertvittayakumjorn y
+  Toni}2019]{Lertvittayakumjorn2019}
+Lertvittayakumjorn, Piyawat y Francesca Toni.
+\newblock 2019.
+\newblock Human-grounded evaluations of explanation methods for text
+  classification.
+\newblock En {\em Proceedings of the 2019 Conference on Empirical Methods in
+  Natural Language Processing and the 9th International Joint Conference on
+  Natural Language Processing (EMNLP-IJCNLP)}, p\'aginas 5195--5205, Hong Kong,
+  China, Noviembre. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Lewis \bgroup et al.\egroup }2019]{Lewis2019}
+Lewis, Mike, Yinhan Liu, Naman Goyal, Marjan Ghazvininejad, Abdelrahman
+  Mohamed, Omer Levy, Ves Stoyanov, y Luke Zettlemoyer.
+\newblock 2019.
+\newblock {BART: Denoising Sequence-to-Sequence Pre-training for Natural
+  Language Generation, Translation, and Comprehension}.
+
+\bibitem[\protect\citename{Li y Roth}2002]{Li2002}
+Li, Xin y Dan Roth.
+\newblock 2002.
+\newblock Learning question classifiers.
+\newblock En {\em Proceedings of the 19th International Conference on
+  Computational Linguistics - Volume 1}, COLING 02, p\'aginas 1--7, USA.
+  Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Ling \bgroup et al.\egroup }2017]{Ling2017}
+Ling, Wang, Dani Yogatama, Chris Dyer, y Phil Blunsom.
+\newblock 2017.
+\newblock Program induction by rationale generation : Learning to solve and
+  explain algebraic word problems.
+
+\bibitem[\protect\citename{Luo \bgroup et al.\egroup }2018]{Luo2018}
+Luo, Ling, Xiang Ao, Feiyang Pan, Jin Wang, Tong Zhao, Ningzi Yu, y Qing He.
+\newblock 2018.
+\newblock Beyond polarity: Interpretable financial sentiment analysis with
+  hierarchical query-driven attention.
+\newblock En {\em Proceedings of the Twenty-Seventh International Joint
+  Conference on Artificial Intelligence, {IJCAI-18}}, p\'aginas 4244--4250.
+  International Joint Conferences on Artificial Intelligence Organization, 7.
+
+\bibitem[\protect\citename{Mikolov \bgroup et al.\egroup }2013]{Mikolov2013}
+Mikolov, Tomas, Ilya Sutskever, Kai Chen, Greg~S Corrado, y Jeff Dean.
+\newblock 2013.
+\newblock Distributed representations of words and phrases and their
+  compositionality.
+\newblock En {\em Advances in neural information processing systems}, p\'aginas
+  3111--3119.
+
+\bibitem[\protect\citename{Moldovan \bgroup et al.\egroup }2001]{Moldovan2001}
+Moldovan, Dan, A~Harabagiu, Marius Paca, Rada Mihalcea, Richard Goodrum, Roxana
+  Girju, y Vasile Rus.
+\newblock 2001.
+\newblock Lasso: A tool for surfing the answer net.
+\newblock 11.
+
+\bibitem[\protect\citename{Moon \bgroup et al.\egroup }2019]{Moon2019}
+Moon, Seungwhan, Pararth Shah, Anuj Kumar, y Rajen Subba.
+\newblock 2019.
+\newblock Opendialkg: Explainable conversational reasoning with attention-based
+  walks over knowledge graphs.
+\newblock En {\em Proceedings of the 57th Annual Meeting of the Association for
+  Computational Linguistics}, p\'aginas 845--854.
+
+\bibitem[\protect\citename{Openai \bgroup et al.\egroup }]{Openai}
+Openai, Alec~Radford, Karthik~Narasimhan Openai, Tim~Salimans Openai, y
+  Ilya~Sutskever Openai.
+\newblock {Improving Language Understanding by Generative Pre-Training}.
+\newblock Informe t\'ecnico.
+
+\bibitem[\protect\citename{PALMONARI y MINERVINI}2020]{Palmonari2020}
+PALMONARI, Matteo y Pasquale MINERVINI.
+\newblock 2020.
+\newblock Knowledge graph embeddings and explainable ai.
+\newblock {\em Knowledge Graphs for Explainable Artificial Intelligence:
+  Foundations, Applications and Challenges}, 47:49.
+
+\bibitem[\protect\citename{Papernot y McDaniel}2018]{Papernot2018}
+Papernot, Nicolas y Patrick~D. McDaniel.
+\newblock 2018.
+\newblock Deep k-nearest neighbors: Towards confident, interpretable and robust
+  deep learning.
+\newblock {\em CoRR}, abs/1803.04765.
+
+\bibitem[\protect\citename{Pappas y Popescu-Belis}2014]{Pappas2014}
+Pappas, Nikolaos y Andrei Popescu-Belis.
+\newblock 2014.
+\newblock Explaining the stars: Weighted multiple-instance learning for
+  aspect-based sentiment analysis.
+\newblock En {\em Proceedings of the 2014 Conference on Empirical Methods in
+  Natural Language Processing ({EMNLP})}, p\'aginas 455--466, Doha, Qatar,
+  Octubre. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Poerner, Sch{\"u}tze, y Roth}2018]{Poerner2018}
+Poerner, Nina, Hinrich Sch{\"u}tze, y Benjamin Roth.
+\newblock 2018.
+\newblock Evaluating neural network explanation methods using hybrid documents
+  and morphosyntactic agreement.
+\newblock En {\em Proceedings of the 56th Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers)}, p\'aginas 340--350,
+  Melbourne, Australia, Julio. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Radev \bgroup et al.\egroup }2002]{Radev2005}
+Radev, Dragomir, Weiguo Fan, Hong Qi, Harris Wu, y Amardeep Grewal.
+\newblock 2002.
+\newblock Probabilistic question answering on the web.
+\newblock En {\em Proceedings of the 11th International Conference on World
+  Wide Web}, WWW 02, p\'agina 408419, New York, NY, USA. Association for
+  Computing Machinery.
+
+\bibitem[\protect\citename{Radford \bgroup et al.\egroup }2019]{Radford2019}
+Radford, Alec, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, y Ilya
+  Sutskever.
+\newblock 2019.
+\newblock {Language Models are Unsupervised Multitask Learners}.
+\newblock Informe t\'ecnico.
+
+\bibitem[\protect\citename{Raffel \bgroup et al.\egroup }2019]{Raffel2019}
+Raffel, Colin, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang,
+  Michael Matena, Yanqi Zhou, Wei Li, y Peter~J. Liu.
+\newblock 2019.
+\newblock {Exploring the Limits of Transfer Learning with a Unified
+  Text-to-Text Transformer}.
+\newblock oct.
+
+\bibitem[\protect\citename{Rajani \bgroup et al.\egroup }2019]{Rajani2019}
+Rajani, Nazneen~Fatema, Bryan McCann, Caiming Xiong, y Richard Socher.
+\newblock 2019.
+\newblock Explain yourself! leveraging language models for commonsense
+  reasoning.
+\newblock En {\em Proceedings of the 57th Annual Meeting of the Association for
+  Computational Linguistics}, p\'aginas 4932--4942, Florence, Italy, Julio.
+  Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Rajpurkar, Jia, y Liang}2018]{Rajpurkar2018}
+Rajpurkar, Pranav, Robin Jia, y Percy Liang.
+\newblock 2018.
+\newblock Know what you don't know: Unanswerable questions for squad.
+\newblock {\em CoRR}, abs/1806.03822.
+
+\bibitem[\protect\citename{Rajpurkar \bgroup et al.\egroup
+  }2016]{Rajpurkar2016}
+Rajpurkar, Pranav, Jian Zhang, Konstantin Lopyrev, y Percy Liang.
+\newblock 2016.
+\newblock Squad: 100, 000+ questions for machine comprehension of text.
+\newblock {\em CoRR}, abs/1606.05250.
+
+\bibitem[\protect\citename{Ribeiro, Singh, y Guestrin}2016]{Ribeiro2016}
+Ribeiro, Marco~Tulio, Sameer Singh, y Carlos Guestrin.
+\newblock 2016.
+\newblock Why should i trust you?: Explaining the predictions of any
+  classifier.
+\newblock En {\em Proceedings of the 22nd ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining, San Francisco, CA, USA, August 13-17,
+  2016}, p\'aginas 1135--1144.
+
+\bibitem[\protect\citename{Rogers \bgroup et al.\egroup }2020]{Rogers2020}
+Rogers, Anna, Olga Kovaleva, Matthew Downey, y Anna Rumshisky.
+\newblock 2020.
+\newblock Getting closer to ai complete question answering: A set of
+  prerequisite real tasks.
+\newblock {\em Proceedings of the AAAI Conference on Artificial Intelligence},
+  34(05):8722--8731, Apr.
+
+\bibitem[\protect\citename{Rosset}2020]{Rosset2020}
+Rosset, C.
+\newblock 2020.
+\newblock Turing-nlg: A 17-billion-parameter language model by microsoft.
+
+\bibitem[\protect\citename{Serrano y Smith}2019]{Serrano2019}
+Serrano, Sofia y Noah~A. Smith.
+\newblock 2019.
+\newblock Is attention interpretable?
+\newblock En {\em Proceedings of the 57th Annual Meeting of the Association for
+  Computational Linguistics}, p\'aginas 2931--2951, Florence, Italy, Julio.
+  Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Shoeybi \bgroup et al.\egroup }2019]{Shoeybi2019}
+Shoeybi, Mohammad, Mostofa Patwary, Raul Puri, Patrick LeGresley, Jared Casper,
+  y Bryan Catanzaro.
+\newblock 2019.
+\newblock Megatron-lm: Training multi-billion parameter language models using
+  model parallelism.
+\newblock {\em CoRR}, abs/1909.08053.
+
+\bibitem[\protect\citename{Sydorova, Poerner, y Roth}2019]{Sydorova2019}
+Sydorova, Alona, Nina Poerner, y Benjamin Roth.
+\newblock 2019.
+\newblock Interpretable question answering on knowledge bases and text.
+\newblock En {\em Proceedings of the 57th Annual Meeting of the Association for
+  Computational Linguistics}, p\'aginas 4943--4951, Florence, Italy, Julio.
+  Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Taylor}1953]{Taylor1953}
+Taylor, Wilson~L.
+\newblock 1953.
+\newblock Cloze procedure: A new tool for measuring readability.
+\newblock {\em Journalism and Mass Communication Quarterly}, 30(4):415.
+
+\bibitem[\protect\citename{Vaswani \bgroup et al.\egroup }2017]{Vaswani2017}
+Vaswani, Ashish, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
+  Aidan~N. Gomez, Lukasz Kaiser, y Illia Polosukhin.
+\newblock 2017.
+\newblock Attention is all you need.
+\newblock jun.
+
+\bibitem[\protect\citename{Vig}2019]{Vig2019}
+Vig, Jesse.
+\newblock 2019.
+\newblock A multiscale visualization of attention in the transformer model.
+\newblock En {\em Proceedings of the 57th Annual Meeting of the Association for
+  Computational Linguistics: System Demonstrations}, p\'aginas 37--42,
+  Florence, Italy, Julio. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Voorhees}2000]{Voorhees1999}
+Voorhees, Ellen.
+\newblock 2000.
+\newblock The trec-8 question answering track report.
+\newblock 11.
+
+\bibitem[\protect\citename{Voskarides \bgroup et al.\egroup
+  }2015]{Voskarides2015}
+Voskarides, Nikos, Edgar Meij, Manos Tsagkias, Maarten de~Rijke, y Wouter
+  Weerkamp.
+\newblock 2015.
+\newblock Learning to explain entity relationships in knowledge graphs.
+\newblock En {\em Proceedings of the 53rd Annual Meeting of the Association for
+  Computational Linguistics and the 7th International Joint Conference on
+  Natural Language Processing (Volume 1: Long Papers)}, p\'aginas 564--574,
+  Beijing, China, Julio. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Wallace, Feng, y Boyd-Graber}2018]{Wallace2018}
+Wallace, Eric, Shi Feng, y Jordan Boyd-Graber.
+\newblock 2018.
+\newblock Interpreting neural networks with nearest neighbors.
+\newblock En {\em Proceedings of the 2018 {EMNLP} Workshop {B}lackbox{NLP}:
+  Analyzing and Interpreting Neural Networks for {NLP}}, p\'aginas 136--144,
+  Brussels, Belgium, Noviembre. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Wu \bgroup et al.\egroup }2016]{Wu2016}
+Wu, Yonghui, Mike Schuster, Zhifeng Chen, Quoc~V. Le, Mohammad Norouzi,
+  Wolfgang Macherey, Maxim Krikun, Yuan Cao, Qin Gao, Klaus Macherey, Jeff
+  Klingner, Apurva Shah, Melvin Johnson, Xiaobing Liu, Lukasz Kaiser, Stephan
+  Gouws, Yoshikiyo Kato, Taku Kudo, Hideto Kazawa, Keith Stevens, George
+  Kurian, Nishant Patil, Wei Wang, Cliff Young, Jason Smith, Jason Riesa, Alex
+  Rudnick, Oriol Vinyals, Greg Corrado, Macduff Hughes, y Jeffrey Dean.
+\newblock 2016.
+\newblock Google's neural machine translation system: Bridging the gap between
+  human and machine translation.
+\newblock {\em CoRR}, abs/1609.08144.
+
+\bibitem[\protect\citename{Xie \bgroup et al.\egroup }2017]{Xie2017}
+Xie, Qizhe, Xuezhe Ma, Zihang Dai, y Eduard Hovy.
+\newblock 2017.
+\newblock An interpretable knowledge transfer model for knowledge base
+  completion.
+\newblock En {\em Proceedings of the 55th Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers)}, p\'aginas 950--962,
+  Vancouver, Canada, Julio. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Yamada \bgroup et al.\egroup }2020]{Yamada2020}
+Yamada, Ikuya, Akari Asai, Hiroyuki Shindo, Hideaki Takeda, y Yuji Matsumoto.
+\newblock 2020.
+\newblock Luke: Deep contextualized entity representations with entity-aware
+  self-attention.
+
+\bibitem[\protect\citename{Yan \bgroup et al.\egroup }2020]{Yan2020}
+Yan, Yu, Weizhen Qi, Yeyun Gong, Dayiheng Liu, Nan Duan, Jiusheng Chen, Ruofei
+  Zhang, y Ming Zhou.
+\newblock 2020.
+\newblock {ProphetNet: Predicting Future N-gram for Sequence-to-Sequence
+  Pre-training}.
+\newblock jan.
+
+\end{thebibliography}

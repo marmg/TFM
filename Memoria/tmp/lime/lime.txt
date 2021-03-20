@@ -1,0 +1,101 @@
+Meter en 3
+\paragraph{}
+In order to use \emph{LIME} with \emph{BERT} for Multiple-Choice (the same as with any other model), a function has to be developed that takes as input a list of perturbed instances, makes the prediction and return the probability for each class. 
+\paragraph{}
+Even when is not the efficient, the easiest and most common way to fit the model is by repeating the article, joined to the question and one of the options, for instance while predicting in \emph{RACE} dataset, the result would be four instances with the same article and the same question, but with a different option each. 
+\paragraph{}
+So, in order to develop the function used by \emph{LIME}, this four instances have to be created inside it with the perturbations made by the method. Depending on the experiment, this instances will be different because the perturbations will be just the question, the article, the options and so on, and will be concatenated with the original parts that are not being perturbed.
+\paragraph{}
+Then, the instances are converted to the features to make the prediction. The result is transformed with a \emph{Softmax} function and finally is returned to \emph{LIME}, which analyzes the outputs related to the perturbations made, given as the result a score based on the importance of the word for the prediction.
+
+\paragraph{1st Experiment}
+Thus, the first experiment consisted on make \emph{LIME} perturb just the question and see what words are important for the model. This was tested with different samples of the test set and the results showed that \emph{LIME} is able to detect the words that are indeed important for the model, as can be seen in Figure \ref{fig:lime-result-q-1a}.
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.35]{images/lime-result-q-1a}
+	\caption{\emph{LIME} result for the first experiment.}
+	\label{fig:lime-result-q-1a}
+\end{figure}
+\paragraph{}
+In that example, the real label was ``C'', and \emph{LIME} was able to detect that the important word was ``discipline'', so if we change this word the result will vary, but if we change the rest of the question, the result shouldn't change too much. 
+So the next steps were to check if that idea was true. In order to do this some changes have been made in both the question and the options to see if the result is the same.
+\paragraph{}
+The first change consisted on paraphrase the question without changing the most important word, in this case ``discipline''. The change was the next one:\\
+\textit{Original question: A discipline leader is supposed to \_ }\\
+\textit{New question: What is a discipline leader supposed to?} \\
+It is not a big change but is enough to see if the question form is important for the model. As the important word, discipline, has not being removed, the model shouldn't have any problem to get the correct answer. Nevertheless, the model failed by selecting the answer ``A''  instead of the correct answer in this case. 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.35]{images/lime-result-q-1b}
+	\caption{\emph{LIME} result for the first experiment with the first change on the question.}
+	\label{fig:lime-result-q-1b}
+\end{figure}
+\paragraph{}
+But, attending to the probabilities of the prediction, it can be seen that both ``A'' and ``C'' options have almost the same probability. And, according to \emph{LIME}, ``discipline'' is still important for the ``C'' option.
+\paragraph{}
+The next change was made to test if the question form is really important for the model. So the question form used before is maintained, having the new question: \\
+\textit{New question: What is a discipline leader?}  \\
+In this case was needed to change also the answer, adapting them to the answer form expected. For instance: \\
+\textit{Original option: take care of the whole group} \\
+\textit{New option: A person supposed to take care of the whole group} \\
+The change was made trying to do not change the meaning of the original ones, but adapting them to the answer expected by a ``What is...'' question.
+The result in this case was that the model also failed, but in this case it fails by choosing ``B'' as the correct answer.
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.35]{images/lime-result-q-1c}
+	\caption{\emph{LIME} result for the first experiment with the second change on the question.}
+	\label{fig:lime-result-q-1c}
+\end{figure}
+\paragraph{}
+To see if the question form was indeed so important and to see if the ``discipline'' word was important or not, a second change was made. This change consisted on replacing the ``discipline'' word with a synonym, ``orderliness''. This is interesting because in the original text the word ``discipline'' appears with the correct answer, but the word ``orderliness'' don't appear at all, so if the model is able to choose the correct answer could be due to the understanding of the model of the language, knowing the synonyms. 
+\paragraph{}
+So the changes made before by paraphrasing the question were made now, but replacing ``discipline'' with ``orderliness''. The results were interesting because, in this case, the model chose the correct answer in both cases, something that didn't happened while preserving the original ``most important'' word. 
+\paragraph{}
+As said before this could be because of the ability of the model to understand the language, but this was just an idea until \emph{LIME} was used to check the importance of the word to see that the word ``orderliness'' was the most important word of the new question. The important thing here is that the importance score of ``orderliness'' is bigger in this case than the importance score of ``discipline'' in the other questions, what could explain the fact that in this case the model has been able to find the correct answer.
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.35]{images/lime-result-q-1d}
+	\caption{\emph{LIME} result for the first experiment with the third change on the question.}
+	\label{fig:lime-result-q-1d}
+\end{figure}
+\paragraph{}
+By looking at the result of these changes it seems that the question form is not that important because the model is able to find the correct answer with that kind of question. But then, it is not clear why has it failed with the first changes that preserved ``discipline'' in the question. Another change was made in order to try to explain this. In this case the options were changed to see if the relation between the question and the options was important. The change consisted on paraphrase the options. For instance for the question of the second change: \\
+\textit{Question: What is a discipline leader?} \\
+The original option, \\
+\textit{Original option: A person supposed to make sure that nobody chats in class} \\
+was changed into this new one: \\
+\textit{New option: A person that has to assure that nobody chats in class} \\
+This way, both the question and the options have been changed, and in this case some words of the original one have been removed, like ``supposed''. In this case, again, the model chose the correct answer, focusing again on the word ``discipline''.
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.35]{images/lime-result-q-1e}
+	\caption{\emph{LIME} result for the first experiment with the fifth change on the question.}
+	\label{fig:lime-result-q-1e}
+\end{figure}
+\paragraph{2n Experiment}
+ Taking this into account, it is different the way to understand the model if it is a multiple-choice problem or an extractive question answering problem.
+\paragraph{}
+When analyzing the explanations obtained with \emph{LIME} for the same test example, it has been seen that \emph{LIME} is able to detect the words of the label being explained, but it is curious that an \emph{a priori} important word like ``chats'' it is not weighted by \emph{LIME}, nor positive nor negative, with all experiments and modifications done.
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.35]{images/lime-result-2a}
+	\caption{\emph{LIME} result for the second experiment.}
+	\label{fig:lime-result-2a}
+\end{figure}
+This is curious, because the other words of the options are common and/or related to the same domain, the school, meanwhile ``chats'' is a verb of a different domain -and more related to ``discipline'', the most important word of the question-, but ``nobody'', which is also a ``different'' word and related in someway to ``discipline'' it is detected and it's detected as the most important word for the model, which makes sense.
+\paragraph{3rd Experiment}
+In the third experiment the article was perturbed to see if \emph{LIME} was able to find the most important words within it. The results showed that \emph{LIME} knows how to deal with large texts (inputs), but as the model's input size is not too large (due to hardware limitations in the training phase), the most important words of the text can not be captured by \emph{LIME}.
+\paragraph{}
+Even when this is obviously a problem, the experiment is not a complete failure, because it has been seen one of the most possible causes for the model to fail, this is, the input size is not as large as it should. For this kind of problems in which the input are large texts (such articles), the input size plays an important role in the results.
+\paragraph{}
+Nevertheless the model is still able to choose the correct option sometimes. This could be due to the knowledge the model has about the language. In these cases, where the model can't see the sentences the evidence is into, the model knows which one is the correct answer by understanding what the question requires and the meaning of the important words of the question and linking them to the most similar answer.
+\paragraph{4th Experiment}
+In the final experiment, both the question and the options are going to be analyzed. The results showed that the model focus more on the options than in the question. Even when explaining a specific label, \emph{LIME} returns a greater weight for words in other options than in the question itself.
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.35]{images/lime-result-4a}
+	\caption{\emph{LIME} result for the fourth experiment.}
+	\label{fig:lime-result-4a}
+\end{figure}
+This could mean that, if that words of other options are changed, the model could choose them as correct answer.
+
