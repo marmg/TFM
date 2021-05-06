@@ -9,20 +9,28 @@
 
 \section{Motivation}
 \label{sec:Motivation}
-\noindent
-
+\noindent With the increase of the data available and the computational power, Artificial Intelligence systems are more often used in the world, finding them in almost any sector, from banking to health. The Natural Language Processing is one of the main areas and one of the most used nowadays, helping companies to automatically process documents on any type (such as bank statements, salary slips, medical examinations and so on) to take decisions that may be critical (like credit grant).
+\paragraph{}
+But these systems learn from data in an statistical way, and sometimes fail. Ever year the performance of these systems is improved, but these use to be reflected also in the complexity of understanding how these systems work, being almost impossible for a human to understand what is going on inside a model and thus, to understand why a model gives an specific output.
+\paragraph{}
+This lack of understanding in the model performance is critical, preventing companies to use them to take critical decisions that can not be explained. Imagine a person asking for a credit grant that is denied, without any explanation why.
+\paragraph{}
+As said before these systems learn from data that have been recollected for years. And this data may be biased against, for instance, people of a specific gender, race, etc. If humans can not understand the model decisions can not know if this have been due to this bias or not, preventing them to avoid discrimination.
+\paragraph{}
+To solve this, new regulations control the usage of these systems, for instance in the \emph{GDPR} the ``Right to Explain'' is a must have for any system, what could lead to forbid the usage of these systems.
+\paragraph{}
+Because of all of this, the ability to explain what is going on inside the models and to explain why a model has given an output is a really important task. This work studies the most important tools for explainability applied to language models, studying the state of the art of this technologies and checking if these tools can be applied to specific problem such as question answering and if there are indeed useful to understand the behavior of the systems. 
 \section{Proposal and goals}
 \label{sec:ProposalAndGoals}
-\noindent
-
+\noindent In this work some of the most famous tools for explainability are going to be tested over a language model trained for a multiple choice problem, more specific a \emph{BERT} model trained over the \emph{RACE} dataset is going to be used.
+\paragraph{}
+The state of the art of the language models, the question answering task and the explainability is going to be reviewed, and finally some tools are going to be tested with a model trained for a multiple choice problem.
 \section{Document structure}
 \label{sec:DocumentStructure}
-\noindent
-
 \begin{description}
 \item \textbf{Chapter 1. Introduction.} In this chapter the main motives for the realization of this essay, the proposal and the goals to achieve are presented, as well as the document structure.
 \item \textbf{Chapter 2. State of the art.} The discipline and the task are reviewed in this chapter, including a brief introduction of the explainability, the language models and the question answering task and the state of the art of this areas. At the end of this chapter, the state of the art of explainability applied to Natural Language Processing tasks is reviewed.
-\item \textbf{Chapter 3. Methodology.}  The different methods and algorithms used to solve the problem are introduced and studied in this chapter.
+\item \textbf{Chapter 3. Methodology.}  The model to be used is trained and the different methods and algorithms used to solve the problem are applied to the multiple choice problem.
 \item \textbf{Chapter 4. Results.} After knowing the different methods and algorithms being used, the experiments with their results are presented in this chapter.
 \item \textbf{Chapter 5. Conclusions and future work.} The conclusions of the review of the state of the art in addition to the conclusion of the usage of the different methods and to the future work that could be done after this project.
 \end{description} 
