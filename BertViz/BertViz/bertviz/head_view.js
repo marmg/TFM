@@ -340,7 +340,11 @@ function initialize() {
   config.nHeads = config.attention[config.filter]['attn'][0].length;
   config.headVis  = new Array(config.nHeads).fill(true);
   config.layer = 0;
-  config.initialTextLength = config.attention[config.max_length].right_text.length;
+  if (config.attention[config.max_length].left_text.length > config.attention[config.max_length].right_text.length) {
+    config.initialTextLength = config.attention[config.max_length].left_text.length;
+  } else {
+    config.initialTextLength = config.attention[config.max_length].right_text.length;
+  }
   console.log('initial text length')
   console.log(config.initialTextLength)
 }
